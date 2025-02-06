@@ -28,31 +28,26 @@ const Navbar: React.FC = () => {
 
           {/* Navigation Buttons */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/services" passHref>
+            <Link href="#services" passHref>
               <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
                 Services
               </span>
             </Link>
-            <Link href="/projects" passHref>
+            <Link href="#projects" passHref>
               <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
                 Projects
               </span>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="#about" passHref>
               <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
                 About Us
-              </span>
-            </Link>
-            <Link href="/blog" passHref>
-              <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
-                Blog
               </span>
             </Link>
           </div>
 
           {/* Contact Button */}
           <div>
-            <Link href="/contact" passHref>
+            <Link href="#contact" passHref>
               <span className="bg-[#85A947] hover:bg-[#3E7B27] text-white px-4 py-2 rounded-md shadow-md transition duration-300 cursor-pointer">
                 Contact
               </span>

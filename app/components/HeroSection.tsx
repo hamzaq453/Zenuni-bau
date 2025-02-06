@@ -6,7 +6,7 @@ import HeroImg2 from "../../public/HeroImg2.jpg";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-[#123524] text-white relative">
+    <section className="bg-[#123524] text-white relative py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-20">
         {/* Left Content */}
         <div className="md:w-1/2 space-y-6 text-center md:text-left">

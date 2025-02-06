@@ -4,7 +4,7 @@ import Service1 from "../../public/Service1.webp";
 import Service2 from "../../public/Service2.webp";
 import Service3 from "../../public/Service3.webp";
 
-const services = [
+const Services = [
   {
     title: "Rebar Weaving",
     description:
@@ -27,7 +27,7 @@ const services = [
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className=" bg-[#123524] text-white py-16 px-4">
+    <section id="services" className=" bg-[#123524] text-white mt-1 py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#85A947]">
           Our <span className="text-[#EFE3C2]">Services</span>
@@ -39,7 +39,7 @@ const ServicesSection: React.FC = () => {
         </p>
       </div>
       <div className="mt-12 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {services.map((service, index) => (
+        {Services.map((service, index) => (
           <div
             key={index}
             className="bg-[#3f4e24] text-white p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 text-center"

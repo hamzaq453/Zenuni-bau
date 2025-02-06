@@ -28,7 +28,7 @@ const projects = [
 
 const ProjectsPortfolio: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-[#25301e] via-[#29381e] to-[#25301e] text-[#123524] py-16 px-4">
+    <section id="projects" className="bg-[#123524] text-[#123524] py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#8ba068]">
           Our <span className="text-[#85A947]">Projects</span>
@@ -43,7 +43,7 @@ const ProjectsPortfolio: React.FC = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#415321] text-[#EFE3C2] rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+            className="bg-[#244b16] text-[#EFE3C2] rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
           >
             {/* Project Image */}
             <div className="relative w-full h-56">
