@@ -63,17 +63,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-300">📞 +49 176 20183495</p>
 
           {/* Social Media Icons */}
-          <div className="flex justify-center md:justify-start space-x-4 mt-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#85A947] transition duration-300">
-              <FaFacebookF size={24} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#85A947] transition duration-300">
-              <FaInstagram size={24} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#85A947] transition duration-300">
-              <FaLinkedinIn size={24} />
-            </a>
-          </div>
+          
         </div>
       </div>
 
