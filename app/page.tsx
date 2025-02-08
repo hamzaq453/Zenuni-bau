@@ -7,14 +7,15 @@ import ServicesSection from "./components/services";
 import TestimonialsSection from "./components/Testimonials";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="mt-0">
-
+      <Navbar/>
     <HeroSection/>  
     <ServicesSection/>
-    <Space/>
+    {/* <Space/> */}
     <ProjectsPortfolio/>
     <AboutUs/>
     <TestimonialsSection/>

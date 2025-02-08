@@ -25,7 +25,7 @@ const testimonials = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section className="bg-[#123524] text-white mt-1 py-28 px-4">
+    <section className="bg-[#123524] text-white py-28 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#EFE3C2]">
           What Our <span className="text-[#85A947]">Clients Say</span>
