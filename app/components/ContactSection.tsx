@@ -34,7 +34,8 @@ const ContactSection: React.FC = () => {
           const errorData = await response.json();
           console.error("Error sending message:", response.status, errorData);
         } catch (jsonError) {
-          console.error("Error sending message:", response.status, response.statusText); // Handle cases where response is not json
+          console.error("Error parsing JSON:", jsonError);
+          console.error("Server Response (Non-JSON):", response.status, response.statusText);
         }
         setStatus("error");
       }
