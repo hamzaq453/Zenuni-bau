@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/Logo.png"; // Your company logo
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Logo from "../../public/Logo.png"; 
 
 const Footer: React.FC = () => {
   return (
