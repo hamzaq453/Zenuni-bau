@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Space from "./components/Space";
 import ProjectsPortfolio from "./components/ProjectsSection";
@@ -15,7 +14,6 @@ export default function Home() {
       <Navbar/>
     <HeroSection/>  
     <ServicesSection/>
-    {/* <Space/> */}
     <ProjectsPortfolio/>
     <AboutUs/>
     <TestimonialsSection/>

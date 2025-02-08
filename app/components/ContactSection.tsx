@@ -11,12 +11,10 @@ const ContactSection: React.FC = () => {
 
   const [status, setStatus] = useState<string | null>(null);
 
-  // Handle Input Change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle Form Submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
@@ -32,9 +30,16 @@ const ContactSection: React.FC = () => {
         setStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
+        try {
+          const errorData = await response.json();
+          console.error("Error sending message:", response.status, errorData);
+        } catch (jsonError) {
+          console.error("Error sending message:", response.status, response.statusText); // Handle cases where response is not json
+        }
         setStatus("error");
       }
     } catch (error) {
+      console.error("Error sending message:", error);
       setStatus("error");
     }
   };
@@ -50,10 +55,8 @@ const ContactSection: React.FC = () => {
         </p>
       </div>
 
-      {/* Contact Form */}
       <div className="max-w-4xl mx-auto mt-12 bg-[#415321] p-8 rounded-lg shadow-lg">
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
-          {/* Name */}
           <input
             type="text"
             name="name"
@@ -61,10 +64,9 @@ const ContactSection: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3  bg-black text-gray-300 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85A947]"
+            className="w-full px-4 py-3 bg-black text-gray-300 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85A947]"
           />
-          
-          {/* Email */}
+
           <input
             type="email"
             name="email"
@@ -75,7 +77,6 @@ const ContactSection: React.FC = () => {
             className="w-full px-4 py-3 bg-black text-gray-300 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85A947]"
           />
 
-          {/* Subject */}
           <input
             type="text"
             name="subject"
@@ -86,7 +87,6 @@ const ContactSection: React.FC = () => {
             className="w-full px-4 py-3 bg-black text-gray-300 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85A947]"
           />
 
-          {/* Message */}
           <textarea
             name="message"
             placeholder="Your Message"
@@ -97,7 +97,6 @@ const ContactSection: React.FC = () => {
             className="w-full px-4 py-3 bg-black text-gray-300 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85A947]"
           ></textarea>
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="bg-black hover:bg-[#3E7B27] text-white px-6 py-3 rounded-md shadow-md transition duration-300"
@@ -105,7 +104,6 @@ const ContactSection: React.FC = () => {
             Send Message
           </button>
 
-          {/* Status Message */}
           {status === "sending" && <p className="text-yellow-500">Sending...</p>}
           {status === "success" && <p className="text-green-500">Message sent successfully!</p>}
           {status === "error" && <p className="text-red-500">Failed to send message. Please try again.</p>}
