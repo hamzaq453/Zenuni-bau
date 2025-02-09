@@ -5,28 +5,28 @@ export async function POST(req: Request) {
   try {
     const { name, email, subject, message } = await req.json();
 
-    // SMTP Transport Configuration (Use Gmail SMTP)
+    // SMTP-Transportkonfiguration (Verwendung von Gmail SMTP)
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.GMAIL_USER, // Your Gmail address
-        pass: process.env.GMAIL_APP_PASSWORD, // App password (not Gmail password)
+        user: process.env.GMAIL_USER, // Deine Gmail-Adresse
+        pass: process.env.GMAIL_APP_PASSWORD, // App-Passwort (nicht das Gmail-Passwort)
       },
     });
 
-    // Email Content
+    // E-Mail-Inhalt
     const mailOptions = {
       from: email,
       to: "zenuni_bau@hotmail.com",
-      subject: `Contact Form: ${subject}`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      subject: `Kontaktformular: ${subject}`,
+      text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     };
 
-    // Send Email
+    // E-Mail senden
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ success: true, message: "Message sent successfully!" }, { status: 200 });
+    return NextResponse.json({ success: true, message: "Nachricht erfolgreich gesendet!" }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ success: false, message: "Failed to send message.", error }, { status: 500 });
+    return NextResponse.json({ success: false, message: "Fehler beim Senden der Nachricht.", error }, { status: 500 });
   }
 }
