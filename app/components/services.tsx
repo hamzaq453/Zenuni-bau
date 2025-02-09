@@ -6,21 +6,21 @@ import Service3 from "../../public/Service3.webp";
 
 const Services = [
   {
-    title: "Rebar Weaving",
+    title: "Bewehrungsflechten",
     description:
-      "We provide precision-crafted rebar structures for durable and reinforced construction projects.",
+      "Wir bieten präzisionsgefertigte Bewehrungsstrukturen für langlebige und verstärkte Bauprojekte.",
     imageSrc: Service1,
   },
   {
-    title: "Drywall Installation",
+    title: "Trockenbau Installation",
     description:
-      "Our high-quality drywall solutions cater to both residential and commercial spaces.",
+      "Unsere hochwertigen Trockenbaulösungen eignen sich für Wohn- und Gewerbeimmobilien.",
     imageSrc: Service2,
   },
   {
-    title: "Structural Planning",
+    title: "Strukturelle Planung",
     description:
-      "Expert structural design and planning for safe and efficient construction.",
+      "Fachgerechte strukturelle Planung und Konstruktion für sichere und effiziente Bauprojekte.",
     imageSrc: Service3,
   },
 ];
@@ -30,12 +30,12 @@ const ServicesSection: React.FC = () => {
     <section id="services" className=" bg-[#123524] text-white mt-0 shadow-2xl shadow-black py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#85A947]">
-          Our <span className="text-[#EFE3C2]">Services</span>
+          Unsere <span className="text-[#EFE3C2]">Dienstleistungen</span>
         </h2>
         <p className="text-lg text-[#EFE3C2] max-w-2xl mx-auto">
-          We specialize in <span className="font-normal text-[#85A947]">Rebar Weaving</span>,{" "}
-          <span className="font-normal text-[#85A947]">Drywall Installation</span> and{" "}
-          <span className="font-normal text-[#85A947]">Structural Planning</span>.
+          Wir sind spezialisiert auf <span className="font-normal text-[#85A947]">Bewehrungsflechten</span>,{" "}
+          <span className="font-normal text-[#85A947]">Trockenbau Installation</span> und{" "}
+          <span className="font-normal text-[#85A947]">Strukturelle Planung</span>.
         </p>
       </div>
       <div className="mt-12 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

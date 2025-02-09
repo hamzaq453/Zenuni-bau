@@ -7,21 +7,21 @@ import Project3 from "../../public/BridgeImg.jpg";
 // Example project data (replace with actual projects)
 const projects = [
   {
-    title: "Residential Building",
+    title: "Wohngebäude",
     description:
-      "A high-quality residential building featuring precision rebar weaving and drywall construction.",
+      "Ein hochwertiges Wohngebäude mit präzisem Bewehrungsflechten und Trockenbaukonstruktion.",
     imageSrc: Project1,
   },
   {
-    title: "Commercial Complex",
+    title: "Gewerbekomplex",
     description:
-      "A state-of-the-art commercial complex built with durable and efficient materials.",
+      "Ein hochmodernes Gewerbegebäude, gebaut mit langlebigen und effizienten Materialien.",
     imageSrc: Project2,
   },
   {
-    title: "Bridge Construction",
+    title: "Brückenbau",
     description:
-      "An infrastructure marvel showcasing our expertise in structural planning and execution.",
+      "Ein infrastrukturelles Meisterwerk, das unser Fachwissen in der strukturellen Planung und Umsetzung demonstriert.",
     imageSrc: Project3,
   },
 ];
@@ -31,11 +31,10 @@ const ProjectsPortfolio: React.FC = () => {
     <section id="projects" className="bg-[#123524] text-[#123524] py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#8ba068]">
-          Our <span className="text-[#85A947]">Projects</span>
+          Unsere <span className="text-[#85A947]">Projekte</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Explore some of the projects we’ve completed, showcasing our expertise
-          in rebar weaving, drywall installation, and structural planning.
+          Entdecken Sie einige unserer abgeschlossenen Projekte, die unser Fachwissen in Bewehrungsflechten, Trockenbauinstallation und struktureller Planung demonstrieren.
         </p>
       </div>
 
@@ -61,7 +60,7 @@ const ProjectsPortfolio: React.FC = () => {
               <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
               <p className="text-[#EFE3C2] mb-4">{project.description}</p>
               {/* <button className="bg-[#123524] hover:bg-[#3E7B27] text-white px-4 py-2 rounded-md shadow-md transition duration-300">
-                Learn More
+                Mehr erfahren
               </button> */}
             </div>
           </div>

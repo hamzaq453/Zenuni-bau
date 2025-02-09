@@ -17,37 +17,37 @@ const Footer: React.FC = () => {
             </div>
           </Link>
           <p className="text-gray-300 mt-4">
-            Experts in **Rebar Weaving & Drywall Construction**. We build with confidence and precision.
+            Experten für <strong>Bewehrungsflechten & Trockenbau</strong>. Wir bauen mit Vertrauen und Präzision.
           </p>
         </div>
 
         {/* Middle Section - Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold text-[#85A947]">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-[#85A947]">Schnellzugriff</h3>
           <ul className="mt-4 space-y-2">
             <li>
               <Link href="/" passHref>
-                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Home</span>
+                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Startseite</span>
               </Link>
             </li>
             <li>
               <Link href="#services" passHref>
-                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Services</span>
+                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Dienstleistungen</span>
               </Link>
             </li>
             <li>
               <Link href="#projects" passHref>
-                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Projects</span>
+                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Projekte</span>
               </Link>
             </li>
             <li>
               <Link href="#about" passHref>
-                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">About Us</span>
+                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Über uns</span>
               </Link>
             </li>
             <li>
               <Link href="#contact" passHref>
-                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Contact</span>
+                <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">Kontakt</span>
               </Link>
             </li>
           </ul>
@@ -55,20 +55,17 @@ const Footer: React.FC = () => {
 
         {/* Right Section - Contact Info & Social Media */}
         <div>
-        <h3 className="text-lg font-semibold text-[#85A947]">Contact Us</h3>
-            <p className="mt-4 text-gray-300">📍 An der Norf 45, 41469 Neuss, Germany</p>
-            <p className="text-gray-300">📧 zenuni_bau@outlook.de</p>
-            <p className="text-gray-300">📞 +49 178 2977386</p>
-            <p className="text-gray-300">📞 +49 176 20183495</p>
-
-          {/* Social Media Icons */}
-          
+          <h3 className="text-lg font-semibold text-[#85A947]">Kontakt</h3>
+          <p className="mt-4 text-gray-300">📍 An der Norf 45, 41469 Neuss, Deutschland</p>
+          <p className="text-gray-300">📧 zenuni_bau@outlook.de</p>
+          <p className="text-gray-300">📞 +49 178 2977386</p>
+          <p className="text-gray-300">📞 +49 176 20183495</p>
         </div>
       </div>
 
       {/* Copyright Section */}
       <div className="text-center border-t border-gray-600 mt-10 pt-4">
-        <p className="text-gray-400">&copy; {new Date().getFullYear()} Zenuni-Bau. All Rights Reserved.</p>
+        <p className="text-gray-400">&copy; {new Date().getFullYear()} Zenuni-Bau. Alle Rechte vorbehalten.</p>
       </div>
     </footer>
   );

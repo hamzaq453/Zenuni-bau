@@ -39,22 +39,22 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-6">
           <Link href="#services">
             <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
-              Services
+              Dienstleistungen
             </span>
           </Link>
           <Link href="#projects">
             <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
-              Projects
+              Projekte
             </span>
           </Link>
           <Link href="#about">
             <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
-              About Us
+              Über uns
             </span>
           </Link>
           <Link href="#contact">
             <span className="hover:text-[#85A947] transition duration-300 cursor-pointer">
-              Contact
+              Kontakt
             </span>
           </Link>
         </div>
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
               className="text-lg font-medium hover:text-[#EFE3C2] transition duration-300 cursor-pointer"
             >
-              Services
+              Dienstleistungen
             </span>
           </Link>
           <Link href="#projects">
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
               className="text-lg font-medium hover:text-[#EFE3C2] transition duration-300 cursor-pointer"
             >
-              Projects
+              Projekte
             </span>
           </Link>
           <Link href="#about">
@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
               className="text-lg font-medium hover:text-[#EFE3C2] transition duration-300 cursor-pointer"
             >
-              About Us
+              Über uns
             </span>
           </Link>
           <Link href="#contact">
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
               className="text-lg font-medium hover:text-[#EFE3C2] transition duration-300 cursor-pointer"
             >
-              Contact
+              Kontakt
             </span>
           </Link>
         </nav>

@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: "John Doe",
     review:
-      "Zenuni-Bau delivered exceptional quality in our commercial project. Highly recommended!",
+      "Zenuni-Bau hat in unserem Gewerbeprojekt außergewöhnliche Qualität geliefert. Sehr empfehlenswert!",
     rating: 5,
   },
   {
     name: "Sarah Smith",
     review:
-      "Professional and reliable service. The rebar weaving was done with precision!",
+      "Professioneller und zuverlässiger Service. Das Bewehrungsflechten wurde mit höchster Präzision ausgeführt!",
     rating: 4,
   },
   {
     name: "David Johnson",
     review:
-      "Top-notch drywall installation. Their team was efficient and skilled.",
+      "Erstklassige Trockenbauinstallation. Ihr Team war effizient und kompetent.",
     rating: 5,
   },
 ];
@@ -28,11 +28,10 @@ const TestimonialsSection: React.FC = () => {
     <section className="bg-[#123524] text-white py-28 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8 text-[#EFE3C2]">
-          What Our <span className="text-[#85A947]">Clients Say</span>
+          Was unsere <span className="text-[#85A947]">Kunden sagen</span>
         </h2>
         <p className="text-lg text-[#85A947] max-w-2xl mx-auto">
-          See what our satisfied clients have to say about our quality work and
-          commitment to excellence.
+          Erfahren Sie, was unsere zufriedenen Kunden über unsere hochwertige Arbeit und unser Engagement für Exzellenz sagen.
         </p>
       </div>
 
