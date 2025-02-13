@@ -57,11 +57,11 @@ const AboutUs: React.FC = () => {
       </div>
 
       {/* CTA Button - Positioned Below */}
-      <div className="max-w-7xl mx-auto text-left mt-8 pl-6">
+      {/* <div className="max-w-7xl mx-auto text-left mt-8 pl-6">
         <button className="bg-[#85A947] hover:bg-[#3E7B27] text-white px-6 py-3 rounded-md shadow-md transition duration-300">
           Mehr erfahren
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -65,7 +65,13 @@ const Footer: React.FC = () => {
 
       {/* Copyright Section */}
       <div className="text-center border-t border-gray-600 mt-10 pt-4">
-        <p className="text-gray-400">&copy; {new Date().getFullYear()} Zenuni-Bau. Alle Rechte vorbehalten.</p>
+        <p className="text-gray-400">
+          &copy; {new Date().getFullYear()} Zenuni-Bau. Alle Rechte vorbehalten. <br />
+          Erstellt von{" "}
+          <Link href="https://www.linkedin.com/in/hamza-qureshi-21b61a249/" passHref target="_blank" rel="noopener noreferrer">
+            <span className="text-[#85A947] hover:underline">Hamza Qureshi</span>
+          </Link>
+        </p>
       </div>
     </footer>
   );
