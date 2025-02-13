@@ -7,10 +7,12 @@ import TestimonialsSection from "./components/Testimonials";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
     <div className="mt-0">
+      <SpeedInsights/>
       <Navbar/>
     <HeroSection/>  
     <ServicesSection/>
