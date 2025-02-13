@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Service1 from "../../public/Service1.webp";
-import Service2 from "../../public/Service2.webp";
-import Service3 from "../../public/Service3.webp";
+import Service1 from "../../public/Service1n.webp.jpg";
+import Service2 from "../../public/Service2n.webp";
+import Service3 from "../../public/Service3n.webp";
 
 const Services = [
   {

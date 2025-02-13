@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Project1 from "../../public/ResImg.jpg";
-import Project2 from "../../public/ComplexImg.jpg";
-import Project3 from "../../public/BridgeImg.jpg";
+import Project1 from "../../public/ResImg1.jpg";
+import Project2 from "../../public/ComplexImg1.jpg";
+import Project3 from "../../public/BridgeImg1.jpg";
 
 // Example project data (replace with actual projects)
 const projects = [

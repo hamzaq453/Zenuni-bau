@@ -4,19 +4,19 @@ import { FaUserCircle } from "react-icons/fa";
 // Example testimonials data
 const testimonials = [
   {
-    name: "John Doe",
+    name: "Hans Müller",
     review:
       "Zenuni-Bau hat in unserem Gewerbeprojekt außergewöhnliche Qualität geliefert. Sehr empfehlenswert!",
     rating: 5,
   },
   {
-    name: "Sarah Smith",
+    name: "Klara Schmidt",
     review:
       "Professioneller und zuverlässiger Service. Das Bewehrungsflechten wurde mit höchster Präzision ausgeführt!",
     rating: 4,
   },
   {
-    name: "David Johnson",
+    name: "Felix Wagner",
     review:
       "Erstklassige Trockenbauinstallation. Ihr Team war effizient und kompetent.",
     rating: 5,
