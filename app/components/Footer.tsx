@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-semibold text-[#85A947]">Kontakt</h3>
           <p className="mt-4 text-gray-300">📍 An der Norf 45, 41469 Neuss, Deutschland</p>
-          <p className="text-gray-300">📧 zenuni_bau@outlook.de</p>
+          <p className="text-gray-300">📧 info@zenunibau.com</p>
           <p className="text-gray-300">📞 +49 178 2977386</p>
           <p className="text-gray-300">📞 +49 176 20183495</p>
         </div>
