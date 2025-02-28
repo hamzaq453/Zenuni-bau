@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     // E-Mail-Inhalt
     const mailOptions = {
       from: email,
-      to: "zenuni_bau@hotmail.com",
+      to: "info@zenunibau.com",
       subject: `Kontaktformular: ${subject}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     };
